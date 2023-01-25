@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jmantillaS7.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="txtUsuario" Placeholder="Ingrese usuario" Keyboard="Email"/>
+            <Entry x:Name="txtContrasena" Placeholder="Ingrese contraseña" IsPassword="True"/>
+            <Button Text="Iniciar sesión" Clicked="btnLogin_Clicked" x:Name="btnLogin" BackgroundColor="Cyan" TextColor="White"/>
+            <Button Text="Registro" Clicked="btnRegistro_Clicked" x:Name="btnRegistro"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

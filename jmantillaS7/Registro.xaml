@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jmantillaS7.Registro">
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="30">
+            <Label Text="Nombre: "/>
+            <Entry Placeholder="Intrduce tu nombre" x:Name="Nombre"/>            
+            <Label Text="Usuario: "/>
+            <Entry Placeholder="Intrduce tu usuario" x:Name="Usuario" Keyboard="Email"/>            
+            <Label Text="Contraseña: "/>
+            <Entry Placeholder="Intrduce tu contraseña" x:Name="Contra" IsPassword="True"/>
+            <Button x:Name="btnAgregar" Text="Agregar" Clicked="btnAgregar_Clicked" BackgroundColor="Azure"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
