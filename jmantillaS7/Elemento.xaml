@@ -3,10 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jmantillaS7.Elemento">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Spacing="10" Padding="10">
+                <Label x:Name="lblmensaje"/>
+                <Label Text="Nombre"/>
+                <Entry x:Name="lblnombre" Placeholder="Nombre"/>
+
+                <Label Text="Usuario"/>
+                <Entry x:Name="lblusuario" Placeholder="Usuario"/>
+
+                <Label Text="Password"/>
+                <Entry x:Name="lblpassword" Placeholder="Password" IsPassword="True"/>
+
+                <Button x:Name="btnactualiza" Text="ACTUALIZAR"
+                         Clicked="btnactualiza_Clicked"/>
+
+                <Button x:Name="btnelimina" Text="ELIMINAR"
+                         Clicked="btnelimina_Clicked"/>
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

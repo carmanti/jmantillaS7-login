@@ -34,6 +34,7 @@ namespace jmantillaS7
             Usuario.Text = "";
             Contra.Text = "";
             DisplayAlert("Alerta", "Se agregó correctamente", "Ok");
+            Navigation.PushAsync(new Login());
         }
     }
 }

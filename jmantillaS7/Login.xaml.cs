@@ -14,7 +14,7 @@ namespace jmantillaS7
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Login : ContentPage
     {
-        private SQLiteAsyncConnection _conn;
+        public SQLiteAsyncConnection _conn;
         public Login()
         {
             InitializeComponent();
@@ -29,7 +29,7 @@ namespace jmantillaS7
         {
             try
             {
-                var dataPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "uisrael.deb3");
+                var dataPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "uisrael.db3");
                 var db = new SQLiteConnection(dataPath);
 
                 db.CreateTable<Estudiante>();
